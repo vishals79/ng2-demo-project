@@ -16,6 +16,6 @@ export class HeaderComponent implements OnInit {
   }
 
   goToHomePage(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/'],{queryParams : {'userId':1}});
   }
 }

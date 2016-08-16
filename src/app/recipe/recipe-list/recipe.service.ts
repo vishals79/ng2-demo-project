@@ -25,4 +25,11 @@ export class RecipeService {
     this.recipes.splice(this.recipes.indexOf(recipe),1);
   }
 
+  addRecipe(recipe: Recipe){
+    this.recipes.push(recipe);
+  }
+
+  editItem(oldRecipe: Recipe, newRecipe: Recipe){
+    this.recipes[this.recipes.indexOf(oldRecipe)] = newRecipe;
+  }
 }
